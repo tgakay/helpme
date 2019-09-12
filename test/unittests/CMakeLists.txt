@@ -7,6 +7,7 @@ set( SOURCES_UNITTESTS_TESTS
     unittest-fletcher.cpp
     unittest-fullrun.cpp
     unittest-fullrun-compressed.cpp
+    unittest-fullrun-isodipole-virial.cpp
     unittest-fullrun-multipoles.cpp
     unittest-gammafunction.cpp
     unittest-gridsize.cpp
