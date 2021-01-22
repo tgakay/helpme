@@ -1586,7 +1586,7 @@ class PMEInstance {
             boxVecs_(1,0) != boxVecs(1,0) || boxVecs_(1,1) != boxVecs(1,1) || boxVecs_(1,2) != boxVecs(1,2) ||
             boxVecs_(2,0) != boxVecs(2,0) || boxVecs_(2,1) != boxVecs(2,1) || boxVecs_(2,2) != boxVecs(2,2) ||
             latticeType_ != LatticeType::ExplicitMatrix) {
-            boxVecs_ = boxVecs;
+            boxVecs_ = boxVecs.clone();
             recVecs_ = boxVecs_.inverse();
             scaledRecVecs_ = recVecs_.clone();
             scaledRecVecs_.row(0) *= gridDimensionA_;
