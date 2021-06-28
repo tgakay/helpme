@@ -11,7 +11,7 @@
 
 #include "helpme.h"
 
-TEST_CASE("Full run with a small toy system, comprising two water molecules.") {
+TEST_CASE("Full compressed run with a small toy system, comprising two water molecules.") {
     // Setup parameters and reference values.
     helpme::Matrix<double> coordsD(
         {{2.0, 2.0, 2.0}, {2.5, 2.0, 3.0}, {1.5, 2.0, 3.0}, {0.0, 0.0, 0.0}, {0.5, 0.0, 1.0}, {-0.5, 0.0, 1.0}});

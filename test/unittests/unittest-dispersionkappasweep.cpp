@@ -74,7 +74,7 @@ std::tuple<Real, helpme::Matrix<Real>, helpme::Matrix<Real>> dispersionKappaSwee
 }
 
 TEST_CASE(
-    "check invariance of energy, force and virial, with respect to attenuation parameter, for a toy Coulomb system.") {
+    "check invariance of energy, force and virial, with respect to attenuation parameter, for a toy dispersion system.") {
     SECTION("EFV routine tests") {
         double TOL = 1e-8;
 
