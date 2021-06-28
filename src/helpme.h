@@ -9,6 +9,19 @@
 #ifndef _HELPME_HELPME_H_
 #define _HELPME_HELPME_H_
 
+#if defined D_MPI
+#define HAVE_MPI 1
+#endif
+#if D_SCM_MATH_MKL == 1
+#define HAVE_MKL 1
+#endif
+// #define HAVE_FFTWF 1
+#define HAVE_FFTWD 1
+
+#ifdef _MSC_VER
+#define __restrict__ __restrict
+#endif
+
 #if __cplusplus || DOXYGEN
 
 // C++ header

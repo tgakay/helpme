@@ -9,6 +9,10 @@
 #ifndef _HELPME_TENSOR_UTILS_H_
 #define _HELPME_TENSOR_UTILS_H_
 
+#ifdef _MSC_VER
+#define __restrict__ __restrict
+#endif
+
 #if HAVE_BLAS == 1
 extern "C" {
 extern void dgemm_(char *, char *, int *, int *, int *, double *, double *, int *, double *, int *, double *, double *,

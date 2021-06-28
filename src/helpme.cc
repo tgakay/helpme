@@ -7,19 +7,6 @@
 //
 // ENDLICENSE
 
-#if defined D_MPI
-#define HAVE_MPI 1
-#endif
-#if D_SCM_MATH_MKL == 1
-#define HAVE_MKL 1
-#define HAVE_FFTWD 1
-// #define HAVE_FFTWF 1
-#endif
-
-#ifdef _WIN32
-#define __restrict__ __restrict
-#endif
-
 #include "helpme.h"
 
 #include <iostream>
